@@ -9,9 +9,9 @@ pipeline {
     stage('Build') {
       steps { 
         sh 'ls'
-        sh 'git checkout master'
-        sh 'git merge qa'
-        sh 'git push origin master'
+        sh 'git checkout dev'
+        sh 'git merge master'
+        sh 'git push origin dev'
       }
     }
   }
