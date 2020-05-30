@@ -9,7 +9,7 @@ pipeline {
     stage('Build') {
       steps { 
         sh 'ls'
-        sh 'git merge experimental -m 'Esto es un merge con mensaje''
+        sh 'git merge experimental -m "Esto es un merge con mensaje"'
       }
     }
   }
