@@ -9,9 +9,10 @@ pipeline {
     stage('Build') {
       steps { 
         sh 'ls'
-        
+        sh 'git checkout master'
+        sh 'git merge qa'
+        sh 'git push origin master'
       }
-      git merge qa -m "Esto es un merge con mensaje"
     }
   }
 }
