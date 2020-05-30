@@ -9,7 +9,7 @@ pipeline {
     stage('Build') {
       steps { 
         sh 'ls'
-        sh 'git merge master'
+        sh 'git merge qa'
       }
     }
   }
