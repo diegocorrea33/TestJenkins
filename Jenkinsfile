@@ -8,7 +8,10 @@ pipeline {
     }
     stage('Build') {
       steps { 
-        sh 'ls' 
+        sh 'ls'
+        sh 'git checkout dev'
+        sh 'git merge master'
+        sh 'git push origin dev'
       }
     }
   }
